@@ -4,30 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/coff"
+
     tools:context=".MainActivity">
+
     <EditText
         android:text="0"
         android:id="@+id/numbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/but_7"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/numbers"
-        android:text="7"
-        />
+        android:text="7" />
+
     <Button
         android:id="@+id/but_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2"
         app:layout_constraintLeft_toRightOf="@id/but_7"
-        app:layout_constraintTop_toBottomOf="@id/numbers"/>
+        app:layout_constraintTop_toBottomOf="@id/numbers" />
+
     <Button
         android:id="@+id/but_9"
 
@@ -35,7 +41,8 @@
         android:layout_height="wrap_content"
         android:text="3"
         app:layout_constraintLeft_toRightOf="@id/but_8"
-        app:layout_constraintTop_toBottomOf="@id/numbers"/>
+        app:layout_constraintTop_toBottomOf="@id/numbers" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -43,29 +50,32 @@
         android:id="@+id/del_but"
         app:layout_constraintLeft_toRightOf="@id/but_9"
         app:layout_constraintTop_toBottomOf="@id/numbers"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_4"
         android:text="4"
         app:layout_constraintTop_toBottomOf="@id/but_7"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_5"
         android:text="5"
         app:layout_constraintTop_toBottomOf="@id/but_8"
-        app:layout_constraintLeft_toRightOf="@id/but_4"/>
+        app:layout_constraintLeft_toRightOf="@id/but_4" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_6"
         android:text="6"
         app:layout_constraintTop_toBottomOf="@id/but_9"
-        app:layout_constraintLeft_toRightOf="@id/but_5"/>
+        app:layout_constraintLeft_toRightOf="@id/but_5" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -73,28 +83,32 @@
         android:id="@+id/but_divide"
         app:layout_constraintLeft_toRightOf="@id/but_6"
         app:layout_constraintTop_toBottomOf="@id/del_but"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_1"
         android:text="1"
         app:layout_constraintTop_toBottomOf="@id/but_4"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_2"
         android:text="2"
         app:layout_constraintTop_toBottomOf="@id/but_5"
-        app:layout_constraintLeft_toRightOf="@id/but_1"/>
+        app:layout_constraintLeft_toRightOf="@id/but_1" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_3"
-        android:text="3"
+        android:text="s"
         app:layout_constraintTop_toBottomOf="@id/but_6"
-        app:layout_constraintLeft_toRightOf="@id/but_2"/>
+        app:layout_constraintLeft_toRightOf="@id/but_2" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -102,29 +116,32 @@
         android:id="@+id/but_multiply"
         app:layout_constraintLeft_toRightOf="@id/but_9"
         app:layout_constraintTop_toBottomOf="@id/but_divide"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60sp"
         android:id="@+id/but_0"
         android:text="0"
         app:layout_constraintTop_toBottomOf="@id/but_1"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60sp"
         android:id="@+id/but_fraction"
         android:text=","
         app:layout_constraintTop_toBottomOf="@id/but_2"
-        app:layout_constraintLeft_toRightOf="@id/but_0"/>
+        app:layout_constraintLeft_toRightOf="@id/but_0" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60sp"
         android:id="@+id/but_equals"
         android:text="="
         app:layout_constraintTop_toBottomOf="@id/but_3"
-        app:layout_constraintLeft_toRightOf="@id/but_fraction"/>
+        app:layout_constraintLeft_toRightOf="@id/but_fraction" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -132,8 +149,8 @@
         android:id="@+id/but_minus"
         app:layout_constraintLeft_toRightOf="@id/but_3"
         app:layout_constraintTop_toBottomOf="@id/but_multiply"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -141,11 +158,7 @@
         android:id="@+id/but_plus"
         app:layout_constraintLeft_toRightOf="@id/but_equals"
         app:layout_constraintTop_toBottomOf="@id/but_minus"
-        app:layout_constraintRight_toRightOf="parent"
-        />
-
-
-
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
